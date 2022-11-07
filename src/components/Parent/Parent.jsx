@@ -2,6 +2,35 @@ import React, { Component } from 'react';
 import Child from '../Child/Child';
 
 class Parent extends Component {
+    // Component life cycel
+    /**
+     * Mounting
+     * 1 - constructor
+     * 2 - render()
+     * 3 - Component Did mount
+     */
+    constructor(){
+        super();
+        console.log('Mounting 1-constractor method');
+    }
+    componentDidMount(){
+        console.log('Mounting 3-componentDidMount');
+    }
+    /**
+     * Updating
+     * 1- render()
+     * 2- Component Did Udated
+     */
+    componentDidUpdate(){
+        console.log('Mounting 2-componentDidUpdate');
+    }
+    /**
+     * Unmounting
+     * 1- Component will Unmount
+     */
+    componentWillUnmount(){
+        console.log('Mounting 1-componentWillUnmount');
+    }
     state = {
         userName: 'Shazloka',
         products: [
@@ -29,7 +58,13 @@ class Parent extends Component {
         // prodect.quntity++
         // this.setState({ products })
     }
+    
     render() {
+        // reder second step in DidMount
+        // reder first step in DidUpdate
+        console.log('Mounting 2-render Method');
+        console.log('DidMount 1-render Method');
+
         return (
             <div>
                 <div className="row ">
