@@ -12,7 +12,7 @@
 6. binding
 7. Create parent component and child Component
 8. transfer data from parent to child
-9. differnt between setState() and state={}
+9. difference between setState() and state={}
 10. process CRAD (update,delete) operation (3 steps)
 11. How to use loop and condtion in react.js 
 12. revision some method in ES6 
